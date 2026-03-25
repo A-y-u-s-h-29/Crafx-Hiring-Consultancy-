@@ -8,7 +8,7 @@ const HeroPage = () => {
     navigate("/services")
   }
   const gocareer =()=>{
-    navigate("/career")
+    navigate("/services")
   }
   const [currentSlide, setCurrentSlide] = useState(0);
 

@@ -18,16 +18,8 @@ import {
   FaIndustry
 } from "react-icons/fa";
 import { MdOutlineSecurity } from "react-icons/md";
-import { useNavigate } from "react-router-dom";
 
 const SectorsPage = () => {
-  const navigate = useNavigate();
-
-
-  const gocareer=()=>{
-    navigate('/career')
-    scrollTo(0,0)
-  }
   const [hoveredIndex, setHoveredIndex] = useState(null);
   const [visibleElements, setVisibleElements] = useState({});
 
@@ -185,7 +177,7 @@ const SectorsPage = () => {
         {/* Stats Row */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto mb-12 md:mb-16">
           <div className="bg-white rounded-2xl p-4 shadow-lg text-center">
-            <div className="text-2xl font-bold text-[#18403C]">750+</div>
+            <div className="text-2xl font-bold text-[#18403C]">0+</div>
             <div className="text-xs text-gray-500">Active Jobs</div>
           </div>
           <div className="bg-white rounded-2xl p-4 shadow-lg text-center">
@@ -193,11 +185,11 @@ const SectorsPage = () => {
             <div className="text-xs text-gray-500">Companies</div>
           </div>
           <div className="bg-white rounded-2xl p-4 shadow-lg text-center">
-            <div className="text-2xl font-bold text-[#18403C]">20K+</div>
+            <div className="text-2xl font-bold text-[#18403C]">50K+</div>
             <div className="text-xs text-gray-500">Candidates</div>
           </div>
           <div className="bg-white rounded-2xl p-4 shadow-lg text-center">
-            <div className="text-2xl font-bold text-[#18403C]">92%</div>
+            <div className="text-2xl font-bold text-[#18403C]">98%</div>
             <div className="text-xs text-gray-500">Success Rate</div>
           </div>
         </div>
@@ -276,7 +268,7 @@ const SectorsPage = () => {
             <p className="text-white/90 mb-6 max-w-2xl mx-auto">
               Submit your resume and our recruitment team will find the perfect opportunity for you
             </p>
-            <button onClick={gocareer} className="bg-white text-[#18403C] px-6 py-3 rounded-full font-semibold hover:shadow-xl transition-all duration-300 hover:scale-105">
+            <button className="bg-white text-[#18403C] px-6 py-3 rounded-full font-semibold hover:shadow-xl transition-all duration-300 hover:scale-105">
               Upload Resume
             </button>
           </div>

@@ -7,9 +7,6 @@ const HeroPage = () => {
   const goservice =()=>{
     navigate("/services")
   }
-  const gocareer =()=>{
-    navigate("/career")
-  }
   const [currentSlide, setCurrentSlide] = useState(0);
 
   // Array of background images

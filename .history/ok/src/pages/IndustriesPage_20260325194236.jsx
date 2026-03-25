@@ -17,8 +17,7 @@ import {
   FaRocket,
   FaBullhorn,
   FaFlask,
-  FaPalette,
-  FaHardHat
+  FaPalette
 } from "react-icons/fa";
 import { GiMining, GiOilRig, GiBridge } from "react-icons/gi";
 import { MdOutlineSecurity } from "react-icons/md";

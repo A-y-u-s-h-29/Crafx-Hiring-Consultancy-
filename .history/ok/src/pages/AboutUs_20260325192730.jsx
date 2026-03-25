@@ -199,7 +199,7 @@ const AboutUs = () => {
               </div>
               <div className="flex items-center gap-2">
                 <FaClock className="text-[#18403C]" />
-                <span className="text-gray-600">Est. 2023</span>
+                <span className="text-gray-600">Est. 2018</span>
               </div>
             </div>
           </div>

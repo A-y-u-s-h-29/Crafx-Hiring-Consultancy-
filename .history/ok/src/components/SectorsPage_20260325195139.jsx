@@ -26,7 +26,6 @@ const SectorsPage = () => {
 
   const gocareer=()=>{
     navigate('/career')
-    scrollTo(0,0)
   }
   const [hoveredIndex, setHoveredIndex] = useState(null);
   const [visibleElements, setVisibleElements] = useState({});

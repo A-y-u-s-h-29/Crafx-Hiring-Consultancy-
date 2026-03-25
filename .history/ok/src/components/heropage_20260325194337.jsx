@@ -7,9 +7,6 @@ const HeroPage = () => {
   const goservice =()=>{
     navigate("/services")
   }
-  const gocareer =()=>{
-    navigate("/career")
-  }
   const [currentSlide, setCurrentSlide] = useState(0);
 
   // Array of background images
@@ -105,7 +102,7 @@ const HeroPage = () => {
             {/* Buttons */}
             <div className="flex flex-col sm:flex-row gap-4 park">
               {/* Get Started Button with Arrow Icon */}
-              <button onClick={gocareer} className="inline-flex items-center justify-center gap-2 px-8 py-3 bg-white text-[#1F514C] font-semibold rounded-4xl transition duration-300 transform hover:scale-105 shadow-lg group">
+              <button onClick={goservice} className="inline-flex items-center justify-center gap-2 px-8 py-3 bg-white text-[#1F514C] font-semibold rounded-4xl transition duration-300 transform hover:scale-105 shadow-lg group">
                 <span>Free Consultation</span>
                 <img src="/images/ok.svg" alt="arrow" />
               </button>

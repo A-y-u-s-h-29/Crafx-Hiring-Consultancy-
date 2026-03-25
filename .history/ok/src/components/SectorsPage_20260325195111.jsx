@@ -18,16 +18,9 @@ import {
   FaIndustry
 } from "react-icons/fa";
 import { MdOutlineSecurity } from "react-icons/md";
-import { useNavigate } from "react-router-dom";
 
 const SectorsPage = () => {
-  const navigate = useNavigate();
-
-
-  const gocareer=()=>{
-    navigate('/career')
-    scrollTo(0,0)
-  }
+  const navigate = Use
   const [hoveredIndex, setHoveredIndex] = useState(null);
   const [visibleElements, setVisibleElements] = useState({});
 

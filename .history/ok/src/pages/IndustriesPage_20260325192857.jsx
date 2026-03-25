@@ -17,8 +17,7 @@ import {
   FaRocket,
   FaBullhorn,
   FaFlask,
-  FaPalette,
-  FaHardHat
+  FaPalette
 } from "react-icons/fa";
 import { GiMining, GiOilRig, GiBridge } from "react-icons/gi";
 import { MdOutlineSecurity } from "react-icons/md";
@@ -27,98 +26,63 @@ const IndustriesPage = () => {
   const [hoveredIndex, setHoveredIndex] = useState(null);
   const [visibleElements, setVisibleElements] = useState({});
 
- const industries = [
-  {
-    title: "Information Technology",
-    description: "We provide advice, guidelines and a road map for sourcing, utilizing and managing IT assets and resources.",
-    image: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=600&h=400&fit=crop",
-    icon: FaLaptopCode,
-    stats: "24/7 Support",
-    vacancies: "100+ Vacancy",
-    color: "#18403C"
-  },
-  {
-    title: "Customer Service",
-    description: "Expert customer service professionals dedicated to delivering exceptional support and client satisfaction.",
-    image: "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=600&h=400&fit=crop",
-    icon: FaHeadset,
-    stats: "Unlimited",
-    vacancies: "Unlimited Vacancy",
-    color: "#18403C"
-  },
-  {
-    title: "Human Resource",
-    description: "Skilled HR professionals to manage talent acquisition, employee relations, and organizational development.",
-    image: "https://images.unsplash.com/photo-1551836022-d5d88e9218df?w=600&h=400&fit=crop",
-    icon: FaUsers,
-    stats: "200+ Openings",
-    vacancies: "200+ Vacancy",
-    color: "#18403C"
-  },
-  {
-    title: "BFSI",
-    description: "Financial experts for accounting, auditing, budgeting, and financial planning and analysis.",
-    image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=600&h=400&fit=crop",
-    icon: FaChartLine,
-    stats: "200+ Openings",
-    vacancies: "200+ Vacancy",
-    color: "#18403C"
-  },
-  {
-    title: "Pharma & FMCG",
-    description: "Specialized professionals for pharmaceutical and fast-moving consumer goods industries.",
-    image: "https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?w=600&h=400&fit=crop",
-    icon: FaFlask,
-    stats: "100+ Openings",
-    vacancies: "100+ Vacancy",
-    color: "#18403C"
-  },
-  {
-    title: "Design & Creative",
-    description: "Creative designers and artists for UI/UX, graphic design, and visual communication.",
-    image: "https://images.unsplash.com/photo-1581291518633-83b4ebd1d83e?w=600&h=400&fit=crop",
-    icon: FaPalette,
-    stats: "100+ Openings",
-    vacancies: "100+ Vacancy",
-    color: "#18403C"
-  },
-  {
-    title: "Automobile",
-    description: "Expert workforce solutions for automotive manufacturing, assembly, and aftermarket services with skilled technicians and engineers.",
-    image: "https://images.unsplash.com/photo-1580273916550-e323be2ae537?w=600&h=400&fit=crop",
-    icon: FaCar,
-    stats: "150+ Openings",
-    vacancies: "150+ Vacancy",
-    color: "#18403C"
-  },
-  {
-    title: "Building Infrastructure",
-    description: "Reliable workforce and payroll solutions for infrastructure projects, ensuring smooth operations, compliance, and timely workforce management.",
-    image: "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=600&h=400&fit=crop",
-    icon: FaHardHat,
-    stats: "200+ Openings",
-    vacancies: "200+ Vacancy",
-    color: "#18403C"
-  },
-  {
-    title: "Power & Energy",
-    description: "Skilled professionals focused on energy optimization, utility analysis, and efficient resource management to reduce costs and improve sustainability.",
-    image: "https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?w=600&h=400&fit=crop",
-    icon: FaBolt,
-    stats: "100+ Openings",
-    vacancies: "100+ Vacancy",
-    color: "#18403C"
-  },
-  {
-    title: "Manufacturing & Processes",
-    description: "Comprehensive staffing solutions for manufacturing operations, quality control, supply chain management, and process optimization.",
-    image: "https://images.unsplash.com/photo-1581091226033-d5c48150dbaa?w=600&h=400&fit=crop",
-    icon: FaIndustry,
-    stats: "250+ Openings",
-    vacancies: "250+ Vacancy",
-    color: "#18403C"
-  }
-];
+  const industries = [
+    {
+      title: "Information Technology",
+      description: "We provide advice, guidelines and a road map for sourcing, utilizing and managing IT assets and resources.",
+      image: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=600&h=400&fit=crop",
+      icon: FaLaptopCode,
+      stats: "24/7 Support",
+      vacancies: "100+ Vacancy",
+      color: "#18403C"
+    },
+    {
+      title: "Customer Service",
+      description: "Expert customer service professionals dedicated to delivering exceptional support and client satisfaction.",
+      image: "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=600&h=400&fit=crop",
+      icon: FaHeadset,
+      stats: "Unlimited",
+      vacancies: "Unlimited Vacancy",
+      color: "#18403C"
+    },
+    {
+      title: "Human Resource",
+      description: "Skilled HR professionals to manage talent acquisition, employee relations, and organizational development.",
+      image: "https://images.unsplash.com/photo-1551836022-d5d88e9218df?w=600&h=400&fit=crop",
+      icon: FaUsers,
+      stats: "200+ Openings",
+      vacancies: "200+ Vacancy",
+      color: "#18403C"
+    },
+    {
+      title: "BFSI",
+      description: "Financial experts for accounting, auditing, budgeting, and financial planning and analysis.",
+      image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=600&h=400&fit=crop",
+      icon: FaChartLine,
+      stats: "200+ Openings",
+      vacancies: "200+ Vacancy",
+      color: "#18403C"
+    },
+   
+    {
+      title: "Pharma & FMCG",
+      description: "Specialized professionals for pharmaceutical and fast-moving consumer goods industries.",
+      image: "https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?w=600&h=400&fit=crop",
+      icon: FaFlask,
+      stats: "100+ Openings",
+      vacancies: "100+ Vacancy",
+      color: "#18403C"
+    },
+    {
+      title: "Design & Creative",
+      description: "Creative designers and artists for UI/UX, graphic design, and visual communication.",
+      image: "https://images.unsplash.com/photo-1581291518633-83b4ebd1d83e?w=600&h=400&fit=crop",
+      icon: FaPalette,
+      stats: "100+ Openings",
+      vacancies: "100+ Vacancy",
+      color: "#18403C"
+    }
+  ];
 
   // Intersection Observer for scroll animations
   useEffect(() => {

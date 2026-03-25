@@ -1,16 +1,14 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import HeroPage from './components/heropage'
 
-
+import CenteredHeroPage from './components/Center'
 import SplitPage from './components/ImageCardWrapper'
 import SectorsPage from './components/SectorsPage'
 import IndustriesPage from "./pages/IndustriesPage";
 import AboutUs from "./pages/AboutUs";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
-
-import JobApplicationForm from "./pages/Contact";
-
+import TestimonialSlider from "./components/TestimonialSlider";
 
 
 function App() {
@@ -35,7 +33,6 @@ function App() {
       <Route path="/services" element={<IndustriesPage/>}/>
       <Route path="/about" element={<AboutUs/>}/>
        
-       <Route path="/career" element={<JobApplicationForm/>}/>
       </Routes>
       <Footer/>
     </BrowserRouter>

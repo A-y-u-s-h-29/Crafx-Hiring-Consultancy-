@@ -18,16 +18,8 @@ import {
   FaIndustry
 } from "react-icons/fa";
 import { MdOutlineSecurity } from "react-icons/md";
-import { useNavigate } from "react-router-dom";
 
 const SectorsPage = () => {
-  const navigate = useNavigate();
-
-
-  const gocareer=()=>{
-    navigate('/career')
-    scrollTo(0,0)
-  }
   const [hoveredIndex, setHoveredIndex] = useState(null);
   const [visibleElements, setVisibleElements] = useState({});
 
@@ -276,7 +268,7 @@ const SectorsPage = () => {
             <p className="text-white/90 mb-6 max-w-2xl mx-auto">
               Submit your resume and our recruitment team will find the perfect opportunity for you
             </p>
-            <button onClick={gocareer} className="bg-white text-[#18403C] px-6 py-3 rounded-full font-semibold hover:shadow-xl transition-all duration-300 hover:scale-105">
+            <button className="bg-white text-[#18403C] px-6 py-3 rounded-full font-semibold hover:shadow-xl transition-all duration-300 hover:scale-105">
               Upload Resume
             </button>
           </div>

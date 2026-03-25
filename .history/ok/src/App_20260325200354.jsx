@@ -8,8 +8,7 @@ import IndustriesPage from "./pages/IndustriesPage";
 import AboutUs from "./pages/AboutUs";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
-
-import JobApplicationForm from "./pages/Contact";
+import Contact from "./pages/Contact";
 
 
 
@@ -35,7 +34,7 @@ function App() {
       <Route path="/services" element={<IndustriesPage/>}/>
       <Route path="/about" element={<AboutUs/>}/>
        
-       <Route path="/career" element={<JobApplicationForm/>}/>
+       <Route path="/car" element={<Contact/>}/>
       </Routes>
       <Footer/>
     </BrowserRouter>

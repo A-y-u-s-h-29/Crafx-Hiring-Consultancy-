@@ -157,12 +157,12 @@ const AboutUs = () => {
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
           <div className="bg-white rounded-2xl p-4 md:p-6 shadow-xl hover:shadow-2xl transition-all duration-300 text-center">
             <FaUsers className="text-3xl md:text-4xl text-[#18403C] mx-auto mb-2" />
-            <div className="text-2xl md:text-3xl font-bold text-[#18403C]">200+</div>
+            <div className="text-2xl md:text-3xl font-bold text-[#18403C]">1000+</div>
             <div className="text-xs md:text-sm text-gray-600">Placements Done</div>
           </div>
           <div className="bg-white rounded-2xl p-4 md:p-6 shadow-xl hover:shadow-2xl transition-all duration-300 text-center">
             <FaBuilding className="text-3xl md:text-4xl text-[#18403C] mx-auto mb-2" />
-            <div className="text-2xl md:text-3xl font-bold text-[#18403C]">20+</div>
+            <div className="text-2xl md:text-3xl font-bold text-[#18403C]">200+</div>
             <div className="text-xs md:text-sm text-gray-600">Client Companies</div>
           </div>
           <div className="bg-white rounded-2xl p-4 md:p-6 shadow-xl hover:shadow-2xl transition-all duration-300 text-center">
@@ -199,7 +199,7 @@ const AboutUs = () => {
               </div>
               <div className="flex items-center gap-2">
                 <FaClock className="text-[#18403C]" />
-                <span className="text-gray-600">Est. 2023</span>
+                <span className="text-gray-600">Est. 2018</span>
               </div>
             </div>
           </div>

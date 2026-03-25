@@ -8,7 +8,7 @@ import IndustriesPage from "./pages/IndustriesPage";
 import AboutUs from "./pages/AboutUs";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
-
+import Contact from "./pages/Contact";
 import JobApplicationForm from "./pages/Contact";
 
 

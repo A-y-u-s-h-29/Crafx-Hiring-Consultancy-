@@ -24,10 +24,7 @@ const SectorsPage = () => {
   const navigate = useNavigate();
 
 
-  const gocareer=()=>{
-    navigate('/career')
-    scrollTo(0,0)
-  }
+  const gocareer=()+
   const [hoveredIndex, setHoveredIndex] = useState(null);
   const [visibleElements, setVisibleElements] = useState({});
 
