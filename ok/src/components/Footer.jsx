@@ -50,6 +50,7 @@ const Footer = () => {
     { icon: FaMapMarkerAlt, text: "7th Floor, Gateway Plaza, Hiranandani Business Park, Powai, Mumbai - 400076", link: null },
     { icon: FaPhoneAlt, text: "+91 7715011000", link: "tel:+917715011000" },
     { icon: FaPhoneAlt, text: "+91 9818865522", link: "tel:+919818865522" },
+    { icon: FaEnvelope, text: "ceo@crafx.in", link: "mailto:ceo@crafx.in" },
     { icon: FaEnvelope, text: "info@crafx.in", link: "mailto:info@crafx.in" },
     { icon: FaClock, text: "Mon - Fri: 9:00 AM - 6:00 PM", link: null },
   ];

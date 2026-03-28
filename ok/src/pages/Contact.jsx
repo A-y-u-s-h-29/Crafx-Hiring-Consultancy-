@@ -14,7 +14,7 @@ const JobApplicationForm = () => {
   const [status, setStatus] = useState({ type: '', message: '' });
   
   // WhatsApp target number
-  const WHATSAPP_NUMBER = "+917715011000";
+  const WHATSAPP_NUMBER = "+919505971133";
   
   // Job options - Updated for Infrastructure roles
   const jobOptions = [

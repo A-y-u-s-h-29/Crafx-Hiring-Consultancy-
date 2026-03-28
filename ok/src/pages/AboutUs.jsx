@@ -24,19 +24,34 @@ import {
   FaRegBuilding,
   FaTrain,
   FaPlane,
-  FaRoad
+  FaRoad,
+  FaIndustry,
+  FaHardHat,
+  FaSubway,
+  FaUserTie
 } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 import FeaturesPage from "../components/FeaturesPage";
 
+// Define the companies array inside your component or before the return statement
+const companies = [
+  { name: "ITDC (NTPC)", icon: FaIndustry },
+  { name: "Reliance ADA", icon: FaBuilding },
+  { name: "Emaar", icon: FaBuilding },
+  { name: "Lanco", icon: FaIndustry },
+  { name: "Kalpataru", icon: FaHardHat },
+  { name: "Tata Projects", icon: FaIndustry },
+  { name: "J Kumar Infraprojects", icon: FaSubway }
+];
+
 const AboutUs = () => {
+  const navigate = useNavigate();
 
-   const navigate= useNavigate();
-
-  const goservice =()=>{
-    navigate("/services")
-    scrollTo(0,0)
-  }
+  const goservice = () => {
+    navigate("/services");
+    window.scrollTo(0, 0);
+  };
+  
   const [visibleElements, setVisibleElements] = useState({});
 
   const values = [
@@ -188,9 +203,8 @@ const AboutUs = () => {
         </div>
       </div>
 
-
-    {/* Madhu Sharma - CEO Section */}
-<div className="bg-gradient-to-br from-gray-50 to-white py-16 md:py-24">
+      {/* Madhu Sharma - CEO Section */}
+<div className="bg-gradient-to-br from-gray-50 to-white py-14 md:py-20">
   <div className="container mx-auto px-4">
     <div className="grid md:grid-cols-2 gap-12 items-center">
       {/* Decorative Element Section - Replacing Image */}
@@ -227,7 +241,7 @@ const AboutUs = () => {
         </div>
       </div>
       
-      {/* Content Section - Unchanged */}
+      {/* Content Section - Updated with Contact Information */}
       <div className="fade-up-element order-1 md:order-2" id="ceo-content">
         <div className="inline-flex items-center gap-2 bg-[#18403C]/10 px-4 py-2 rounded-full mb-4">
           <FaQuoteLeft className="text-[#18403C] text-sm" />
@@ -271,37 +285,139 @@ const AboutUs = () => {
           Through my journey, I have observed critical challenges in project execution—<span className="font-medium">vendor fragmentation, delays, cost inefficiencies, and lack of integrated coordination</span>.
         </p>
         
-        {/* Contact Info - Commented out as in original
+        {/* Contact Information - Added similar to Tarun section */}
         <div className="bg-gradient-to-r from-[#18403C]/5 to-transparent rounded-xl p-5 mb-6">
           <div className="flex items-center gap-3 mb-3">
             <div className="bg-[#18403C] rounded-full p-2">
               <FaPhoneAlt className="text-white text-sm" />
             </div>
-            <span className="text-gray-700 font-medium">+91 98188 65522</span>
+            <span className="text-gray-700 font-medium">+91 9891008636</span>
+            <span className="text-gray-700 font-medium">+91 9818865522</span>
           </div>
-          <div className="flex items-center gap-3">
-            <div className="bg-[#18403C] rounded-full p-2">
-              <FaEnvelope className="text-white text-sm" />
-            </div>
-            <span className="text-gray-700 font-medium">madhu.sharma@crafx.in</span>
-          </div>
-        </div> */}
+          
+          
+        </div>
         
-        {/* CTA Buttons - Commented out as in original
-        <div className="flex flex-wrap gap-4">
-          <button className="group bg-[#18403C] text-white px-6 py-2.5 rounded-full font-semibold hover:bg-[#2c6b64] transition-all duration-300 flex items-center gap-2">
-            Connect with Madhu
-            <FaArrowRight className="group-hover:translate-x-1 transition-transform" />
-          </button>
-          <button className="border-2 border-[#18403C] text-[#18403C] px-6 py-2.5 rounded-full font-semibold hover:bg-[#18403C] hover:text-white transition-all duration-300 flex items-center gap-2">
-            <FaLinkedin />
-            LinkedIn Profile
-          </button>
-        </div> */}
+        {/* Additional Company Info */}
+        <div className="mb-6">
+          <p className="text-sm text-gray-500">
+            <span className="font-medium text-gray-700">Progrid Infra & Constructions Pvt. Ltd.:</span> www.progrid.in
+          </p>
+        </div>
+        
+       
       </div>
+      
     </div>
   </div>
 </div>
+
+      {/* Tarun Anand - Founder Director Section */}
+      <div className="bg-gradient-to-br from-gray-50 to-white py-12 md:py-16">
+        <div className="container mx-auto px-4">
+          <div className="grid md:grid-cols-2 gap-12 items-center">
+            
+            {/* Content Section - Now on the left (Order 1) */}
+            <div className="fade-up-element order-1" id="tarun-content">
+              <div className="inline-flex items-center gap-2 bg-[#18403C]/10 px-4 py-2 rounded-full mb-4">
+                <FaUserTie className="text-[#18403C] text-sm" />
+                <span className="text-sm font-medium text-[#18403C]">Leadership & Founder</span>
+              </div>
+              
+              <h2 className="text-3xl md:text-4xl font-bold text-[#18403C] mb-2">
+                Tarun Anand
+              </h2>
+              <p className="text-lg text-[#18403C]/80 font-semibold mb-4">
+                Founder Director, Crafx Services Pvt. Ltd.
+              </p>
+              <p className="text-gray-500 mb-4">
+                Civil Engineer | MBA (IB) | Doctor in Naturopathy & Ayurveda (Pursuing)
+              </p>
+              
+              <div className="w-20 h-1 bg-gradient-to-r from-[#18403C] to-[#2c6b64] mb-6 rounded-full"></div>
+              
+              <p className="text-gray-600 mb-4 leading-relaxed">
+                With over <span className="font-semibold text-[#18403C]">25 years of extensive experience</span> in Supply Chain Management, Procurement, Contracts Management, and Project Execution, I bring a holistic approach to infrastructure development.
+              </p>
+              
+              <p className="text-gray-600 mb-4 leading-relaxed">
+                My career journey includes leadership roles with India's premier infrastructure organizations:
+              </p>
+              
+              {/* Companies Grid */}
+              <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 mb-6">
+                {companies.map((company, idx) => {
+                  const Icon = company.icon;
+                  return (
+                    <div key={idx} className="flex items-center gap-2 bg-gray-50 rounded-lg px-3 py-2">
+                      <Icon className="text-[#18403C] text-sm" />
+                      <span className="text-sm text-gray-700">{company.name}</span>
+                    </div>
+                  );
+                })}
+              </div>
+              
+              <p className="text-gray-600 mb-6 leading-relaxed">
+                My expertise lies in awarding and managing large, complex subcontract packages across major infrastructure projects—<span className="font-medium">Metros, Roads & Highways, Tunnels, Bridges, Buildings, and Mining projects</span>—executed on a PAN India basis.
+              </p>
+              
+              {/* Contact Information */}
+              <div className="bg-gradient-to-r from-[#18403C]/5 to-transparent rounded-xl p-5 mb-6">
+                <div className="flex items-center gap-3 mb-3">
+                  <div className="bg-[#18403C] rounded-full p-2">
+                    <FaPhoneAlt className="text-white text-sm" />
+                  </div>
+                  <span className="text-gray-700 font-medium">+91 9505971133</span>
+                  <span className="text-gray-700 font-medium">+91 7715011000</span>
+                </div>
+                
+                <div className="flex items-center gap-3">
+                  <div className="bg-[#18403C] rounded-full p-2">
+                    <FaEnvelope className="text-white text-sm" />
+                  </div>
+                  <span className="text-gray-700 font-medium">tarun.india@rediffmail.com</span>
+                </div>
+              </div>
+              
+              
+            </div>
+            
+            {/* Decorative Section with Quote - Now on the right (Order 2) */}
+            <div className="relative fade-up-element order-2" id="tarun-decoration">
+              <div className="relative bg-gradient-to-br from-[#18403C] to-[#2c6b64] rounded-2xl shadow-2xl p-6 md:p-12">
+                {/* Quote or Vision Statement */}
+                <div className="relative z-10">
+                  <FaQuoteLeft className="text-white/20 text-4xl md:text-6xl mb-6" />
+                  <p className="text-white text-lg md:text-xl lg:text-2xl font-light leading-relaxed mb-8">
+                    "Strategic collaboration and integrated execution are the cornerstones of building a resilient infrastructure for tomorrow."
+                  </p>
+                  <div className="flex items-center gap-4">
+                    <div className="w-12 h-0.5 bg-white/50"></div>
+                    <span className="text-white/80 text-sm font-medium">Our Philosophy</span>
+                  </div>
+                </div>
+                
+                {/* Decorative Elements */}
+                <div className="absolute top-0 right-0 w-24 md:w-32 h-24 md:h-32 bg-white/5 rounded-full -mr-12 md:-mr-16 -mt-12 md:-mt-16"></div>
+                <div className="absolute bottom-0 left-0 w-32 md:w-48 h-32 md:h-48 bg-white/5 rounded-full -ml-16 md:-ml-24 -mb-16 md:-mb-24"></div>
+              </div>
+              
+              {/* Stats Badge */}
+              <div className="absolute -bottom-6 -right-4 md:-right-6 bg-white rounded-xl p-3 md:p-4 shadow-xl border border-gray-100">
+                <div className="flex items-center gap-2 md:gap-3">
+                  <div className="bg-[#18403C] rounded-full p-1.5 md:p-2">
+                    <FaBuilding className="text-white text-base md:text-xl" />
+                  </div>
+                  <div>
+                    <div className="text-xl md:text-2xl font-bold text-[#18403C]">25+</div>
+                    <div className="text-xs text-gray-500">Years Experience</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
       {/* Who We Are Section */}
       <div className="container mx-auto px-4 py-16 md:py-24">
@@ -337,13 +453,11 @@ const AboutUs = () => {
               />
               <div className="absolute inset-0 bg-gradient-to-tr from-[#18403C]/20 to-transparent"></div>
             </div>
-           
           </div>
         </div>
       </div>
-  <FeaturesPage/>
-  
-  
+      
+      <FeaturesPage />
 
       {/* Our Values Section */}
       <div className="bg-gray-50 py-16 md:py-24 overflow-hidden">
@@ -384,7 +498,6 @@ const AboutUs = () => {
         </div>
       </div>
 
-     
       {/* Location & Contact Section */}
       <div className="container mx-auto px-4 py-16 md:py-24">
         <div className="grid md:grid-cols-2 gap-12">
@@ -461,10 +574,7 @@ const AboutUs = () => {
               Let's work together to build India's infrastructure. Contact us today for a consultation.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="group bg-white text-[#18403C] px-6 md:px-8 py-2.5 md:py-3 rounded-full font-semibold hover:shadow-xl transition-all duration-300 hover:scale-105 flex items-center gap-2 justify-center">
-                Get in Touch
-                <FaArrowRight className="group-hover:translate-x-1 transition-transform" />
-              </button>
+              
               <button onClick={goservice} className="border-2 border-white text-white px-6 md:px-8 py-2.5 md:py-3 rounded-full font-semibold hover:bg-white hover:text-[#18403C] transition-all duration-300">
                 View Our Services
               </button>
